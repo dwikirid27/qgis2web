@@ -43,6 +43,7 @@
         }
         map.createPane('pane_Google_Satelite_0');
         map.getPane('pane_Google_Satelite_0').style.zIndex = 400;
+        map.getView().setCenter(ol.proj.fromLonLat([101.2126617, 0.3249922]))
         var layer_Google_Satelite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             pane: 'pane_Google_Satelite_0',
             opacity: 1.0,
